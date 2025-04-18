@@ -3,8 +3,7 @@
 An advanced backend API system designed for managing bike servicing operations at a bike service center. This API allows seamless management of customers, bikes, and service records with robust CRUD operations and advanced filtering features.
 
 ## 🔗 Live Link
-🔹 [Render PostgreSQL DB](https://render.com/)  
-🔹 Live backend deployment link: _[your-api-url-here]_ (replace with actual link)
+🔹 Live backend deployment link: https://bike-assignment.vercel.app
 
 ---
 
@@ -28,7 +27,7 @@ An advanced backend API system designed for managing bike servicing operations a
 
 ### 🧰 Service Management
 - Add and fetch service records
-- Mark service as complete
+- Mark the service as complete
 - Fetch pending or overdue services
 
 ### ⚠️ Error Handling
@@ -55,9 +54,28 @@ An advanced backend API system designed for managing bike servicing operations a
 
 ---
 
-## 📂 Setup Guide
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/bike-servicing-api.git
-   cd bike-servicing-api
+## Installation
+ Clone the repository:
+
+```
+git clone https://github.com/your-username/bike-servicing-api.git
+```
+Navigate to the project folder and install packages :
+
+```
+npm install
+```
+Create a .env file with the following:
+
+- DATABASE_URL: Collect it from Supabase.
+- DIRECT_URL: Collect it from Supabase.
+- ENABLE_PRISMA_CACHING=false
+
+  
+
+Run the server:
+
+```
+npm run dev
+```
