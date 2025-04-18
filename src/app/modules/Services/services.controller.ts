@@ -6,7 +6,7 @@ import { ServicesRecord } from "./services.service";
 const CreateServices = catchAsync(async (req, res) => {
   const result = await ServicesRecord.CreateBikeService(req.body);
   sendResponse(res, {
-    statusCode: status.OK,
+    statusCode: status.CREATED,
     success: true,
     message: "Services created successfully",
     data: result,

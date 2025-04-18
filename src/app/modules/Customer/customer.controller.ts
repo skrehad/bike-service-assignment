@@ -7,7 +7,7 @@ import sendResponse from "../../../shared/sendResponse";
 const CreateCustomer = catchAsync(async (req, res) => {
   const result = await CustomerServices.CreateCustomer(req.body);
   sendResponse(res, {
-    statusCode: status.OK,
+    statusCode: status.CREATED,
     success: true,
     message: "Customer created successfully",
     data: result,

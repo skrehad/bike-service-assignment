@@ -7,7 +7,7 @@ import { BikeServices } from "./bike.service";
 const CreateBike = catchAsync(async (req, res) => {
   const result = await BikeServices.CreateBike(req.body);
   sendResponse(res, {
-    statusCode: status.OK,
+    statusCode: status.CREATED,
     success: true,
     message: "Bike created successfully",
     data: result,

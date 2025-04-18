@@ -30,7 +30,7 @@ CREATE TABLE "service" (
     "serviceDate" TIMESTAMP(3) NOT NULL,
     "completionDate" TIMESTAMP(3),
     "description" TEXT NOT NULL,
-    "status" "ServiceStatus" NOT NULL DEFAULT 'pending',
+    "status" "ServiceStatus" NOT NULL,
 
     CONSTRAINT "service_pkey" PRIMARY KEY ("serviceId")
 );
