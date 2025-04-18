@@ -32,6 +32,7 @@ const GetCustomerById = catchAsync(async (req, res) => {
   });
 });
 
+// update customer
 const UpdateCustomerById = catchAsync(async (req, res) => {
   const result = await CustomerServices.UpdateCustomerById(
     req.params.id,
